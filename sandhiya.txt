@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V. Sandhiya | Naan Mudhalvan Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Dark Slate Blue */
+            color: #E2E8F0; /* Light Slate Gray */
+        }
+        .text-accent {
+            color: #6366F1; /* Indigo */
+        }
+        .bg-card {
+            background-color: #1E293B; /* Darker Slate Blue */
+        }
+        .btn-primary {
+            background-color: #8B5CF6; /* Violet */
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #7C3AED; /* Darker Violet */
+            transform: translateY(-2px);
+        }
+        .border-gradient {
+            background: linear-gradient(135deg, #8B5CF6, #EC4899); /* Violet to Pink */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .social-link {
+            transition: transform 0.3s ease;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-16 md:py-24">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 text-white">
+                Hello, I'm <span class="border-gradient">V. Sandhiya</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-6">
+                A passionate Computer Science student from the <span class="text-accent">Naan Mudhalvan</span> program.
+            </p>
+            <p class="text-sm md:text-base max-w-2xl mx-auto text-gray-400">
+                I am a dedicated learner with a strong interest in software development, problem-solving, and building innovative projects. Welcome to my digital portfolio!
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#projects" class="btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg">View Projects</a>
+                <a href="#contact" class="bg-transparent border border-gray-500 text-gray-300 font-medium py-3 px-6 rounded-full hover:bg-gray-700 transition-colors">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="details" class="bg-card rounded-xl shadow-lg p-8 md:p-12 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white text-center">About Me</h2>
+            <div class="prose max-w-none text-gray-300">
+                <p>
+                    I am V. Sandhiya, a Computer Science student currently enrolled in the <span class="text-accent">Naan Mudhalvan</span> program, which focuses on skill enhancement and career readiness. My academic journey has equipped me with a solid foundation in core computer science concepts.
+                </p>
+                <p>
+                    I have a strong enthusiasm for coding and enjoy tackling complex challenges. My goal is to leverage my skills to contribute to impactful projects and continue my growth as a developer.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="rounded-xl p-8 md:p-12 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white text-center">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+                <!-- Skill Card 1 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#3B82F6"/></svg>
+                    <span class="block text-gray-300">HTML</span>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#F59E0B"/></svg>
+                    <span class="block text-gray-300">CSS</span>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-purple-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#A855F7"/></svg>
+                    <span class="block text-gray-300">JavaScript</span>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#22C55E"/></svg>
+                    <span class="block text-gray-300">Python</span>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#EF4444"/></svg>
+                    <span class="block text-gray-300">Java</span>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="bg-card rounded-xl p-6 transition-transform hover:scale-105 hover:shadow-xl">
+                    <svg class="h-10 w-10 mx-auto mb-2 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-6 6h4v4h4v-4h4l-6-6z" fill="#EC4899"/></svg>
+                    <span class="block text-gray-300">SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-card rounded-xl shadow-lg p-8 md:p-12 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/374151/E2E8F0?text=Project+1" alt="Project 1" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Title One</h3>
+                        <p class="text-sm text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used. This could be a website, an application, or a simple script.</p>
+                        <a href="#" class="btn-primary text-white text-sm font-medium py-2 px-4 rounded-full inline-block">Learn More</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/374151/E2E8F0?text=Project+2" alt="Project 2" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Title Two</h3>
+                        <p class="text-sm text-gray-400 mb-4">This project showcases my ability to work with APIs and front-end frameworks. It solves a specific problem and demonstrates my problem-solving skills.</p>
+                        <a href="#" class="btn-primary text-white text-sm font-medium py-2 px-4 rounded-full inline-block">Learn More</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/374151/E2E8F0?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Project Title Three</h3>
+                        <p class="text-sm text-gray-400 mb-4">An academic project completed as part of my coursework. It highlights my knowledge of algorithms and data structures.</p>
+                        <a href="#" class="btn-primary text-white text-sm font-medium py-2 px-4 rounded-full inline-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-card rounded-xl shadow-lg p-8 md:p-12 mb-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Get In Touch</h2>
+            <p class="text-gray-300 mb-6 max-w-lg mx-auto">I'm always open to new opportunities and collaborations. Feel free to reach out to me via email.</p>
+            <div class="flex flex-col items-center">
+                <span id="email-text" class="text-lg md:text-xl font-medium text-accent break-all select-all mb-4">sandhiya908001@gmail.com</span>
+                <button id="copy-email-btn" class="btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg relative">
+                    Copy Email
+                </button>
+                <div id="copy-message" class="absolute mt-24 px-4 py-2 bg-green-500 text-white text-sm rounded-lg opacity-0 transition-opacity duration-300">
+                    Email copied!
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        <p>&copy; 2025 V. Sandhiya. All Rights Reserved.</p>
+        <p>Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS</p>
+    </footer>
+
+    <!-- JavaScript for copy functionality -->
+    <script>
+        document.getElementById('copy-email-btn').addEventListener('click', function() {
+            const emailText = document.getElementById('email-text').innerText;
+            
+            // Create a temporary textarea element to hold the text
+            const tempInput = document.createElement('textarea');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            
+            // Select and copy the text
+            tempInput.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempInput);
+
+            // Show and hide the copy message
+            const message = document.getElementById('copy-message');
+            message.classList.remove('opacity-0');
+            message.classList.add('opacity-100');
+            setTimeout(() => {
+                message.classList.remove('opacity-100');
+                message.classList.add('opacity-0');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
